@@ -36,8 +36,6 @@ public class Main {
         boolean d5 = triangle1.compareAreasFigures(t,c1);
         System.out.println(d5);
 
-
-
     }
 }
 class Figure{
