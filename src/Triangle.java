@@ -1,17 +1,20 @@
 public class Triangle extends Figure{
     double ab;
-    double bc, ac;
+    double bc;
+    double ac;
 
-    public Triangle(double ab, double bc, double cd) {
+    public Triangle(double ab, double bc, double ac) {
         this.ab = ab;
         this.bc = bc;
         this.ac = ac;
     }
-    public double calculateAreaFigure(double a, double b, double c){
-        double trP = a + b + c;
+
+    public double calculateAreaFigure(){
+        double trP = ab + bc + ac;
 
         double p = trP/2;
-        double trArea =  Math.sqrt(p * (p - a) * (p - b) * (p - c));
+        double trArea =  Math.sqrt(p * (p - ab) * (p - bc) * (p - ac));
+        //System.out.println(trArea);
         return trArea;
     }
 }

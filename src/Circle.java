@@ -6,6 +6,7 @@ public class Circle extends Figure{
     }
     public double calculateAreaFigure(){
         double s = radius * radius * Math.PI;
+        //System.out.println(s);
         return s;
     }
 }

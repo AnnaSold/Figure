@@ -6,9 +6,9 @@ public class Recktangle extends Figure{
         this.width = width;
     }
 
-
-    public double calculateAreaFigure(double storona1, double storona2) {
-        double areaReckt = storona1 * storona2;
+    public double calculateAreaFigure() {
+        double areaReckt = length * width;
+        //System.out.println(areaReckt);
         return areaReckt;
 
     }
